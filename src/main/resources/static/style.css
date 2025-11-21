@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4f46e5, #6d28d9, #db2777);
+    background-size: 300% 300%;
+    animation: bg-animation 10s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+.container {
+    width: 420px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+form .amount p,
+form .from p,
+form .to p {
+    font-size: 14px;
+    color: #f3f3f3;
+    margin-bottom: 5px;
+}
+
+.amount input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: rgba(242, 228, 243, 0.9);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: rgba(242, 228, 243, 0.9);
+    border-radius: 10px;
+}
+
+.select-container img {
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+select {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+}
+
+.fa-exchange {
+    font-size: 22px;
+    padding: 10px;
+    color: white;
+}
+
+.msg {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ce1ff5;
+    transform: translateY(-2px);
+}
